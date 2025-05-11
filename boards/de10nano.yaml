@@ -1,0 +1,84 @@
+manufacturer: "Altera"
+family: "Cyclone V"
+device: "5CSEBA6U23I7"
+name: "DE10-Nano"
+image: "de10-nano.png"
+templates_dir: de10-nano
+extras:
+  is_virtual:
+    type: bool
+    default: false
+    label: Для удаленных стендов
+components:
+  SW:
+    coordinates:
+      - x: 312
+        y: 356
+        width: 125
+        height: 60
+    label: SW
+    default: true
+  key: # Don't use keys as its builtin attribute of Python dict
+    coordinates:
+      - x: 554
+        y: 454
+        width: 60
+        height: 40
+    label: Keys
+    default: true
+  clock:
+    coordinates:
+      - x: 371
+        y: 301
+        width: 32
+        height: 46
+    label: Clock
+    default: true
+  leds:
+    coordinates:
+      - x: 614
+        y: 426
+        width: 94
+        height: 28
+    label: LEDs
+    default: true
+  HPS:
+    coordinates:
+      - x: 329
+        y: 142
+        width: 55
+        height: 51
+    label: HPS
+    default: false
+  HDMI_TX:
+    coordinates:
+      - x: 20
+        y: 182
+        width: 89
+        height: 111
+    label: HDMI TX
+    default: false
+  ADC:
+    coordinates:
+      - x: 617
+        y: 457
+        width: 92
+        height: 42
+    label: ADC 2x5 Header
+    default: false
+  arduino:
+    coordinates:
+      - x: 181
+        y: 94
+        width: 339
+        height: 27
+      - x: 491
+        y: 229
+        width: 40
+        height: 59
+      - x: 245
+        y: 430
+        width: 280
+        height: 19
+    label: Arduino Header
+    default: false

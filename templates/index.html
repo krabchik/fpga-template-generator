@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Генератор шаблонов</title>
+  <link rel="icon" type="image/webp" href="{{ url_for('static', filename = 'img/logo.webp') }}">
+  <script src="{{ url_for('static', filename = 'js/jquery-3.7.1.min.js') }}"></script>
+  <script src="{{ url_for('static', filename = 'js/script.js') }}"></script>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'styles/index.css') }}" media="screen"/>
+</head>
+<body>
+  <h2>Генератор шаблонных проектов для отладочных плат на основе ПЛИС</h2>
+
+  <!-- Выбора платы -->
+  <label for="board-select">Выберите плату:</label>
+  <select id="board-select">
+    <!-- Здесь будут динамически добавлены названия плат из JavaScript -->
+  </select>
+
+  <!-- Кнопки отправки и загрузки -->
+  <button type="submit" id="submit-button">Сгенерировать архив</button>
+  <button id="download-button">Скачать архив</button>
+
+  <!-- Контейнер компонентов и изображения выбранной платы -->
+  <div id="board-container">
+    <div id="board-name-display"></div>
+    <div id="board-options">
+      <form id="board-form" method="POST" action="/render-board">
+        <input type="hidden" name="board" id="form-board">
+
+        <label for="form-project-name">Имя проекта</label>
+        <input type="text" name="project-name" id="form-project-name">
+
+        <div id="board-components">
+          <!-- Компоненты платы -->
+        </div>
+
+        <div id="board-extras">
+          <!-- Дополнительные опции -->
+        </div>
+      </form>
+    </div>
+    <div class="image-container">
+      <img src="" alt="Изображение платы" id="main-image">
+    </div>
+  </div>
+</body>
+</html>
