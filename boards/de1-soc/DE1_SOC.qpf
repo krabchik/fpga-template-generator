@@ -1,0 +1,6 @@
+DATE = "{{ time_date }}"
+QUARTUS_VERSION = "17.1"
+
+# Revisions
+
+PROJECT_REVISION = "{{ project_name }}"

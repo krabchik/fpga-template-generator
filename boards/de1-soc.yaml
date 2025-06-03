@@ -1,0 +1,128 @@
+manufacturer: "Altera"
+family: "Cyclone V"
+device: "5CSEMA5F31C6"
+name: "DE1-Soc"
+image: "de1-soc.png"
+templates_dir: de1-soc
+extras:
+  is_virtual:
+    type: bool
+    default: false
+    label: Для удаленных стендов
+components:
+  sw:
+    coordinates:
+      - x: 65
+        y: 545
+        width: 312
+        height: 56
+    label: SW
+    default: true
+  key: # Don't use keys as its builtin attribute of Python dict
+    coordinates:
+      - x: 386
+        y: 545
+        width: 229
+        height: 54
+    label: Keys
+    default: true
+  clock:
+    coordinates:
+      - x: 443
+        y: 176
+        width: 25
+        height: 23
+    label: Clock
+    default: true
+  leds:
+    coordinates:
+      - x: 75
+        y: 512
+        width: 299
+        height: 25
+    label: LEDs
+    default: true
+  HPS:
+    coordinates:
+      - x: 408
+        y: 229
+        width: 49
+        height: 49
+    label: HPS
+    default: false
+  seg7:
+    coordinates:
+      - x: 74
+        y: 451
+        width: 221
+        height: 61
+    label: 7-Segment x 6
+    default: false
+  ir:
+    coordinates:
+      - x: 615
+        y: 569
+        width: 97
+        height: 38
+    label: IR TX/RX
+    default: false
+  vga:
+    coordinates:
+      - x: 272
+        y: 2
+        width: 142
+        height: 107
+    label: VGA
+    default: false
+  video_in:
+    coordinates:
+      - x: 196
+        y: 14
+        width: 66
+        height: 82
+    label: Video-In
+    default: false
+  audio:
+    coordinates:
+      - x: 49
+        y: 14
+        width: 146
+        height: 97
+    label: Audio
+    default: false
+  adc:
+    coordinates:
+      - x: 11
+        y: 372
+        width: 54
+        height: 107
+    label: ADC
+    default: false
+  sdram:
+    coordinates:
+      - x: 322
+        y: 392
+        width: 105
+        height: 64
+    label: SDRAM 32MB
+    default: false
+  ps2:
+    coordinates:
+      - x: 6
+        y: 126
+        width: 75
+        height: 76
+    label: PS/2
+    default: false
+  gpio:
+    coordinates:
+      - x: 616
+        y: 190
+        width: 47
+        height: 270
+      - x: 703
+        y: 189
+        width: 47
+        height: 264
+    label: GPIO
+    default: false
